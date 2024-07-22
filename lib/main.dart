@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:todo_codsoft/home_layout/home_layout.dart';
+import 'package:todo_codsoft/screens/edit_task.dart';
 import 'package:todo_codsoft/styles/my_theme.dart';
 
 import 'firebase_options.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
       initialRoute: HomeLayout.routeName,
       routes: {
         HomeLayout.routeName: (context) => HomeLayout(),
+        EditTask.routeName: (context) => EditTask(),
       },
       theme: MyTheme.lightTheme,
       darkTheme: MyTheme.darkTheme,
